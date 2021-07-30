@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="10dp">
+    <RelativeLayout
+        android:layout_marginTop="29dp"
+        android:layout_marginBottom="29dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-20dp"
+        android:layout_toEndOf="@id/imageRv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/res_rounded_20">
+
+        <TextView
+            android:id="@+id/labelBookTitle"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/book_title_goes_here"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/labelBookDesc"
+            android:layout_below="@id/labelBookTitle"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:fontFamily="@font/nunito_light"
+            android:text="@string/lorem_ipsum"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="@color/white"/>
+
+        <View
+            android:id="@+id/hr1"
+            android:layout_marginTop="6dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="150dp"
+            android:layout_below="@id/labelBookDesc"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"/>
+
+        <TextView
+            android:id="@+id/labelBookAuthor"
+            android:layout_toStartOf="@id/btnSeeDetail"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/hr1"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:maxLength="23"
+            android:text="@string/book_author_written_here"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="@color/white"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSeeDetail"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded"
+            android:layout_below="@id/labelBookDesc"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/see_detail"
+            android:minHeight="25dp"
+            android:textSize="10sp"/>
+    </RelativeLayout>
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/circleImageView"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent"
+        android:id="@+id/imageRv"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/book_atomic_habits"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Kawal Covid</string>
+    <string name="title_activity_home">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_hospital">Rumah Sakit</string>
+    <string name="alarm_canceled">Alarm Canceled</string>
+    <string name="alarm_on">Repeating notification on</string>
+    <string name="change_language">Change Language</string>
+    <string name="stay_away_from_covid">Keep Healthy and Stay Away From Covid</string>
+</resources>
