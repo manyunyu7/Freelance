@@ -236,16 +236,16 @@ class AngklungActivity : AppCompatActivity() {
     }
 
     private fun goyangAngklung(xml : View){
-        xml.startAnimation(
-            AnimationUtils.loadAnimation(
-                this,
-                R.anim.short_shake
-            )
-        )
+//        xml.startAnimation(
+//            AnimationUtils.loadAnimation(
+//                this,
+//                R.anim.short_shake
+//            )
+//        )
     }
 
     private fun stopGoyangAngklung(xml : View){
-        xml.clearAnimation()
+//        xml.clearAnimation()
     }
 
 
