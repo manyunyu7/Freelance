@@ -2,6 +2,7 @@ package com.eva.dikejar
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.eva.dikejar.databinding.ActivityNavigationControllerBinding
@@ -18,6 +19,12 @@ class NavigationControllerActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_main_controller)
         setupActionBarWithNavController(navController)
 
-
+        supportActionBar?.hide()
+        actionBar?.hide();
     }
+
+    fun hideBottomNav(){
+        binding.bottomNav.visibility= View.GONE
+    }
+
 }

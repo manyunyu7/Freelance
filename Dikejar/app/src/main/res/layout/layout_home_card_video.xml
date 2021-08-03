@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <ImageView
+                android:id="@+id/vid_tmb1"
+                android:layout_width="152dp"
+                android:layout_height="152dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/xd_thumbnail" />
+
+            <TextView
+                android:layout_width="152dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vid_tmb1"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Komponen Komputer dan Spesifikasi PC" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <ImageView
+                android:id="@+id/vid_tmb2"
+                android:layout_width="152dp"
+                android:layout_height="152dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/xd_thumbnail" />
+
+            <TextView
+                android:layout_width="152dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vid_tmb2"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Komponen Komputer dan Spesifikasi PC" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <ImageView
+                android:id="@+id/vid_tmb3"
+                android:layout_width="152dp"
+                android:layout_height="152dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/xd_thumbnail" />
+
+            <TextView
+                android:layout_width="152dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vid_tmb3"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Komponen Komputer dan Spesifikasi PC" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <ImageView
+                android:id="@+id/vid_tmb4"
+                android:layout_width="152dp"
+                android:layout_height="152dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/xd_thumbnail" />
+
+            <TextView
+                android:layout_width="152dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vid_tmb4"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Komponen Komputer dan Spesifikasi PC" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <ImageView
+                android:id="@+id/vid_tmb5"
+                android:layout_width="152dp"
+                android:layout_height="152dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/xd_thumbnail" />
+
+            <TextView
+                android:layout_width="152dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vid_tmb5"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Komponen Komputer dan Spesifikasi PC" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <ImageView
+                android:id="@+id/vid_tmb6"
+                android:layout_width="152dp"
+                android:layout_height="152dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/xd_thumbnail" />
+
+            <TextView
+                android:layout_width="152dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vid_tmb6"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Komponen Komputer dan Spesifikasi PC" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <ImageView
+                android:id="@+id/vid_tmb7"
+                android:layout_width="152dp"
+                android:layout_height="152dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/xd_thumbnail" />
+
+            <TextView
+                android:layout_width="152dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vid_tmb7"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Komponen Komputer dan Spesifikasi PC" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <ImageView
+                android:id="@+id/vid_tmb8"
+                android:layout_width="152dp"
+                android:layout_height="152dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/xd_thumbnail" />
+
+            <TextView
+                android:layout_width="152dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vid_tmb8"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Komponen Komputer dan Spesifikasi PC" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</HorizontalScrollView>

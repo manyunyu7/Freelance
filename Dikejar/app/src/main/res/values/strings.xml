@@ -8,4 +8,8 @@
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="gali_idemu_raih_targetmu_belajar_bersamaku">Gali idemu Raih targetmu Belajar bersamaku</string>
+    <string name="desc_perakitan">Meliputi : komponen komputer dan spesifikasi PC, alat dan bahan merakit komputer, prosedur merakit komputer CPU, pemasangan motherboard pada casing, pemasangan kartu video, pemasangan konektor ke perangkat I/O</string>
+    <string name="desc_uji_kinerja">Meliputi : Pengertian beep code BIOS, jenis beep code POST BIOS dan artinya, pengecekan perangkat input, proses, output, dan media penyimpanan pada BIOS</string>
+    <string name="card_materi_konfigurasi">Meliputi : Konfigurasi BIOS pada komputer dan setting BIOS.</string>
 </resources>
