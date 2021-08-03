@@ -43,22 +43,22 @@ class AngklungActivity : AppCompatActivity() {
 
         binding.at1.setOnTouchListener { _, event ->
             angklungTouch(1, event)
-            false
+            true
         }
 
         binding.at2.setOnTouchListener { _, event ->
             angklungTouch(2, event)
-            false
+            true
         }
 
         binding.at3.setOnTouchListener { _, event ->
             angklungTouch(3, event)
-            false
+            true
         }
 
         binding.at4.setOnTouchListener { _, event ->
             angklungTouch(4, event)
-            false
+            true
         }
 
         binding.at5.setOnTouchListener { _, event ->
@@ -103,6 +103,7 @@ class AngklungActivity : AppCompatActivity() {
             angklungTouch(14, event)
             false
         }
+
 
 
     }
