@@ -21,6 +21,11 @@ class NavigationControllerActivity : AppCompatActivity() {
 
         supportActionBar?.hide()
         actionBar?.hide();
+
+
+        binding.btnInformation.setOnClickListener {
+            findNavController(R.id.nav_main_controller).navigate(R.id.profileFragment)
+        }
     }
 
     fun hideBottomNav(){

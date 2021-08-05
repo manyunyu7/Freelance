@@ -17,7 +17,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -67,18 +66,19 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:paddingHorizontal="10dp"
-                        android:paddingVertical="20dp">
+                        android:layout_height="wrap_content">
 
                         <ImageView
+                            android:layout_gravity="bottom"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/xd_character_home"
                             android:layout_weight="1" />
 
                         <LinearLayout
+                            android:padding="20dp"
                             android:layout_width="match_parent"
-
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:orientation="vertical">
@@ -142,6 +142,7 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@id/txt_ayo_belajar"
                         android:layout_toEndOf="@id/img_target"
+                        android:layout_marginBottom="20dp"
                         android:fontFamily="@font/poppins_regular"
                         android:text="Kamu bisa belajar dengan cepat melalui ringkasan - ringkasan materi"
                         android:textColor="@color/black" />
@@ -166,18 +167,44 @@
                     android:text="Materi"/>
 
 
-                <include layout="@layout/layout_home_card_materi"/>
+                <include
+                    android:id="@+id/include_materi"
+                    layout="@layout/layout_home_card_materi"/>
 
-                <TextView
-                    android:layout_marginTop="20dp"
-                    android:layout_marginStart="20dp"
-                    android:textSize="20sp"
-                    android:fontFamily="@font/poppins_bold"
+
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Video"/>
+                    android:layout_height="wrap_content">
 
-                <include layout="@layout/layout_home_card_video"/>
+                    <TextView
+                        android:id="@+id/txt_video"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="20dp"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Video"/>
+
+                    <TextView
+                        android:id="@+id/txt_all_video"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="20dp"
+                        android:textSize="14sp"
+                        android:textColor="@color/light_blue_900"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lihat Semua"/>
+
+                </RelativeLayout>
+
+
+                <include
+                    android:id="@+id/included_video"
+                    layout="@layout/layout_home_card_video"/>
 
                 <TextView
                     android:layout_marginTop="20dp"
@@ -188,7 +215,9 @@
                     android:layout_height="wrap_content"
                     android:text="Soal Evaluasi"/>
 
-                <include layout="@layout/layout_home_card_evaluasi"/>
+                <include
+                    android:id="@+id/included_eval"
+                    layout="@layout/layout_home_card_evaluasi"/>
 
 
 

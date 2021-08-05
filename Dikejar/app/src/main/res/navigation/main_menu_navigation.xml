@@ -12,20 +12,84 @@
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
-            android:id="@+id/action_homeFragment_to_dashboardFragment"
-            app:destination="@id/dashboardFragment" />
+            android:id="@+id/action_homeFragment_to_menuVideo"
+            app:destination="@id/menuVideo" />
+        <action
+            android:id="@+id/action_homeFragment_to_evaluasiFragment"
+            app:destination="@id/evaluasiFragment1" />
+        <action
+            android:id="@+id/action_homeFragment_to_fragmentVideo1"
+            app:destination="@id/fragmentVideo1" />
+        <action
+            android:id="@+id/action_homeFragment_to_evaluasiFragment_2_UjiKinerja"
+            app:destination="@id/evaluasiFragment2" />
+        <action
+            android:id="@+id/action_homeFragment_to_materi1Fragment"
+            app:destination="@id/materi1Fragment" />
     </fragment>
-
-    <fragment
-        android:id="@+id/dashboardFragment"
-        android:name="com.eva.dikejar.ui.dashboard.DashboardFragment"
-        android:label="fragment_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
 
     <fragment
         android:id="@+id/notificationsFragment"
         android:name="com.eva.dikejar.ui.notifications.NotificationsFragment"
         android:label="fragment_notifications"
         tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.eva.dikejar.ui.info.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/fragmentVideo1"
+        android:name="com.eva.dikejar.ui.video.FragmentVideo1"
+        android:label="fragment_menu_video"
+        tools:layout="@layout/fragment_menu_video1" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentVideo2"
+        android:name="com.eva.dikejar.ui.video.FragmentVideo2"
+        tools:layout="@layout/fragment_menu_video2"
+        android:label="FragmentVideo2" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentVideo3"
+        android:name="com.eva.dikejar.ui.video.FragmentVideo3"
+        tools:layout="@layout/fragment_menu_video3"
+        android:label="FragmentVideo3" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/evaluasiFragment1"
+        android:name="com.eva.dikejar.ui.evaluasi.EvaluasiFragment_1_Rakit"
+        android:label="fragment_evaluasi"
+        tools:layout="@layout/fragment_evaluasi_1_rakit" />
+    <fragment
+        android:id="@+id/evaluasiFragment2"
+        android:name="com.eva.dikejar.ui.evaluasi.EvaluasiFragment_2_UjiKinerja"
+        android:label="EvaluasiFragment_2_UjiKinerja"
+        tools:layout="@layout/fragment_evaluasi_2_uji_kinerja"
+        />
+    <fragment
+        android:id="@+id/evaluasiFragment3"
+        android:name="com.eva.dikejar.ui.evaluasi.EvaluasiFragment_3_Konfigurasi"
+        android:label="EvaluasiFragment_3_Konfigurasi"
+        tools:layout="@layout/fragment_evaluasi_3"
+        />
+    <fragment
+        android:id="@+id/materi1Fragment"
+        tools:layout="@layout/fragment_materi1"
+        android:name="com.eva.dikejar.ui.materi.Materi1Fragment"
+        android:label="Materi1Fragment" >
+        <action
+            android:id="@+id/action_materi1Fragment_to_pendahuluan1Fragment"
+            app:destination="@id/pendahuluan1Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pendahuluan1Fragment"
+        android:name="com.eva.dikejar.ui.pendahuluan.Pendahuluan1Fragment"
+        android:label="fragment_pendahuluan1"
+        tools:layout="@layout/fragment_pendahuluan1" />
 
 </navigation>

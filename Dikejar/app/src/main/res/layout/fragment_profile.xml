@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.info.ProfileFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xd_background_profile"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="170dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toStartOf="@id/container_name_eva"
+                    android:layout_margin="20dp"
+                    android:src="@drawable/xd_profile_eva" />
+
+                <RelativeLayout
+                    android:id="@+id/container_name_eva"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="-20dp"
+                    android:background="@drawable/ic_xd_rounded_profile"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_nama_eva"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="20dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Eva Yulia Safitri"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_nim_eva"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_nama_eva"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="NIM. 160533611462"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <include layout="@layout/layout_profile_about_eva" />
+                <include layout="@layout/layout_profile_about_dosbing" />
+                <include layout="@layout/layout_profile_about_app" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

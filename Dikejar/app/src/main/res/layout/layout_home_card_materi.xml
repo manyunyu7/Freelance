@@ -33,6 +33,7 @@
                 android:textSize="12sp" />
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/start_materi1"
                 app:cornerRadius="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -75,6 +76,7 @@
 
             <com.google.android.material.button.MaterialButton
                 app:cornerRadius="20dp"
+                android:id="@+id/start_materi2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
@@ -117,6 +119,7 @@
 
             <com.google.android.material.button.MaterialButton
                 app:cornerRadius="20dp"
+                android:id="@+id/start_materi3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"

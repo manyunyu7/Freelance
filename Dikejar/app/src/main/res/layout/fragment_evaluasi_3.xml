@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.evaluasi.EvaluasiFragment_1_Rakit">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-90dp"
+        android:layout_marginTop="-270dp"
+        android:layout_marginEnd="-90dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_ellipse_eval" />
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/xd_eval_header" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Pilih jawaban yang paling tepat !"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_marginTop="20dp"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="3dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1.	Salah satu cara untuk masuk ke dalam BIOS sebuah PC adalah dengan menekan tombol keyboard" />
+
+                    <RadioGroup
+                        android:id="@+id/question1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/answer1_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/answers_3_1_1" />
+
+                        <RadioButton
+                            android:id="@+id/answer1_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="b.	BIOS" />
+
+                        <RadioButton
+                            android:id="@+id/answer1_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="c.	Esc " />
+
+                        <RadioButton
+                            android:id="@+id/answer1_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="d.	Ctrl + Alt" />
+
+                        <RadioButton
+                            android:id="@+id/answer1_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="e.	Ctrl + Alt + Del" />
+
+                    </RadioGroup>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="3dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2.	BIOS singkatan dari" />
+
+                    <RadioGroup
+                        android:id="@+id/question2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/answer2_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="a.	Basic internal output system" />
+
+                        <RadioButton
+                            android:id="@+id/answer2_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/answers_3_2" />
+
+                        <RadioButton
+                            android:id="@+id/answer2_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="c.	Basic input output service" />
+
+                        <RadioButton
+                            android:id="@+id/answer2_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="d.	Basic internal output system" />
+
+                        <RadioButton
+                            android:id="@+id/answer2_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="e.	Basic instinc output system" />
+                    </RadioGroup>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="3dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="3.	Berikut yang dapat di-setting dalam system BIOS, kecuali" />
+
+                    <RadioGroup
+                        android:id="@+id/question3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/answer3_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="a.	Setting  waktu" />
+
+                        <RadioButton
+                            android:id="@+id/answer3_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="b.	Setting boot sequence" />
+
+                        <RadioButton
+                            android:id="@+id/answer3_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/answers_3_3" />
+
+                        <RadioButton
+                            android:id="@+id/answer3_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="d.	Setting suhu temperature" />
+
+                        <RadioButton
+                            android:id="@+id/answer3_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="e.	Setting VGA dan sound" />
+                    </RadioGroup>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="3dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="4.	Apabila motherboard mengalami sistem kehilangan pengaturan, solusi yang dianjurkan seorang teknisi adalah" />
+
+                    <RadioGroup
+                        android:id="@+id/question4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/answer4_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="a.	Periksa baterai" />
+
+                        <RadioButton
+                            android:id="@+id/answer4_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="b.	Pada saat BIOS setup, pastikan pilih Save dan Exit" />
+
+                        <RadioButton
+                            android:id="@+id/answer4_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="c.	Lakukan proses reset  BIOS" />
+
+                        <RadioButton
+                            android:id="@+id/answer4_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="d.	Rapatkan Kembali pin dalam port" />
+
+                        <RadioButton
+                            android:id="@+id/answer4_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/answers_3_4" />
+                    </RadioGroup>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="3dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="5.	Pengaturan tanggal dan waktu pada komputer, dapat dilakukan melalui" />
+
+                    <RadioGroup
+                        android:id="@+id/question5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/answer5_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/answers_3_5" />
+
+                        <RadioButton
+                            android:id="@+id/answer5_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="b.	BIOS features setup" />
+
+                        <RadioButton
+                            android:id="@+id/answer5_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="c.	Chipset features setup" />
+
+                        <RadioButton
+                            android:id="@+id/answer5_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="d.	Power management" />
+
+                        <RadioButton
+                            android:id="@+id/answer5_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="e.	Integrated peripheral" />
+                    </RadioGroup>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="3dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="6.	Tes yang dilakukan oleh PC pada saat booting untuk mengecek fungsi – fungsi komponen PC telah bekerja dengan baik adalah" />
+
+                    <RadioGroup
+                        android:id="@+id/question6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/answer6_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="a.	CMOS" />
+
+                        <RadioButton
+                            android:id="@+id/answer6_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="b.	Boot" />
+
+                        <RadioButton
+                            android:id="@+id/answer6_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="c.	BIOS" />
+
+                        <RadioButton
+                            android:id="@+id/answer6_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/answers_3_6" />
+
+                        <RadioButton
+                            android:id="@+id/answer6_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="e.	Beep" />
+                    </RadioGroup>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="3dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="7.	Tidak terdeteksi BIOS, tidak dapat booting, tidak dapat melakukan indentifikasi hardware dan POST adalah gejala permasalahan" />
+
+                    <RadioGroup
+                        android:id="@+id/question7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/answer7_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="a.	Hard disk" />
+
+                        <RadioButton
+                            android:id="@+id/answer7_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="b.	Disk drive" />
+
+                        <RadioButton
+                            android:id="@+id/answer7_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="c.	Port USB" />
+
+                        <RadioButton
+                            android:id="@+id/answer7_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="d.	Port game" />
+
+                        <RadioButton
+                            android:id="@+id/answer7_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/answers_3_7" />
+                    </RadioGroup>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="3dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="8.	Berikut tiga jenis diagnose komputer adalah" />
+
+                    <RadioGroup
+                        android:id="@+id/question8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/answer8_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="a.	BIOS, pengecekan motherboard, dan pengecekan power supply" />
+
+                        <RadioButton
+                            android:id="@+id/answer8_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="b.	Pada saat booting, BIOS, dan pengecekan power supply" />
+
+                        <RadioButton
+                            android:id="@+id/answer8_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="c.	POST, pada saat booting, BIOS" />
+
+                        <RadioButton
+                            android:id="@+id/answer8_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/answers_3_8" />
+
+                        <RadioButton
+                            android:id="@+id/answer8_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="e.	POST, diagnose umum, dan BIOS" />
+                    </RadioGroup>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="3dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="9.	Konfigurasi BIOS dapat dihilangkan dengan cara" />
+
+                    <RadioGroup
+                        android:id="@+id/question9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/answer9_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="a.	Mematikan komputer" />
+
+                        <RadioButton
+                            android:id="@+id/answer9_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/answers_3_9" />
+
+                        <RadioButton
+                            android:id="@+id/answer9_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="c.	Membuka CPU" />
+
+                        <RadioButton
+                            android:id="@+id/answer9_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="d.	Mereset komputer" />
+
+                        <RadioButton
+                            android:id="@+id/answer9_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="e.	Menginstal ulang komputer" />
+                    </RadioGroup>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="3dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="10.	Program yang memiliki fungsi dalam proses booting ke dalam system operasi yang telah kita install sebelumnya adalah" />
+
+                    <RadioGroup
+                        android:id="@+id/question10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/answer10_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="a.	Booting" />
+
+                        <RadioButton
+                            android:id="@+id/answer10_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="b.	Booted" />
+
+                        <RadioButton
+                            android:id="@+id/answer10_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="c.	Bootstrapper" />
+
+                        <RadioButton
+                            android:id="@+id/answer10_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/answers_3_10" />
+
+                        <RadioButton
+                            android:id="@+id/answer10_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="e.	overclocking" />
+                    </RadioGroup>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_check_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Lihat Nilai" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="20dp"
+                >
+
+                <LinearLayout
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_skor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text="Skor Anda : "
+                        android:fontFamily="@font/poppins_regular"/>
+
+                    <TextView
+                        android:id="@+id/tv_key"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="11sp"
+                        android:text="Kunci Jawaban : "
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppins_regular"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
