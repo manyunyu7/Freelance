@@ -32,6 +32,12 @@
         <action
             android:id="@+id/action_homeFragment_to_profileFragment"
             app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_materi3Fragment"
+            app:destination="@id/materi3Fragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_pratinjauFragment"
+            app:destination="@id/pratinjauFragment" />
     </fragment>
 
     <fragment
@@ -76,7 +82,11 @@
         android:name="com.eva.dikejar.ui.evaluasi.EvaluasiFragment_2_UjiKinerja"
         android:label="EvaluasiFragment_2_UjiKinerja"
         tools:layout="@layout/fragment_evaluasi_2_uji_kinerja"
-        />
+        >
+        <action
+            android:id="@+id/action_evaluasiFragment2_to_konsep3Fragment"
+            app:destination="@id/konsep3Fragment" />
+    </fragment>
     <fragment
         android:id="@+id/evaluasiFragment3"
         android:name="com.eva.dikejar.ui.evaluasi.EvaluasiFragment_3_Konfigurasi"
@@ -96,13 +106,21 @@
         android:id="@+id/pendahuluan1Fragment"
         android:name="com.eva.dikejar.ui.pendahuluan.Pendahuluan1Fragment"
         android:label="fragment_pendahuluan1"
-        tools:layout="@layout/fragment_pendahuluan1" />
+        tools:layout="@layout/fragment_pendahuluan1" >
+        <action
+            android:id="@+id/action_pendahuluan1Fragment_to_konsep2Fragment"
+            app:destination="@id/konsep2Fragment" />
+    </fragment>
     <fragment
         android:id="@+id/pendahuluan2Fragment"
         android:name="com.eva.dikejar.ui.pendahuluan.Pendahuluan2Fragment"
         android:label="Pendahuluan2Fragment"
         tools:layout="@layout/fragment_pendahuluan1"
-        />
+        >
+        <action
+            android:id="@+id/action_pendahuluan2Fragment_to_konsep2Fragment"
+            app:destination="@id/konsep2Fragment" />
+    </fragment>
     <fragment
         android:id="@+id/materi2Fragment"
         android:name="com.eva.dikejar.ui.materi.Materi2Fragment"
@@ -113,5 +131,48 @@
             android:id="@+id/action_materi2Fragment_to_pendahuluan2Fragment"
             app:destination="@id/pendahuluan2Fragment" />
     </fragment>
+    <fragment
+        android:id="@+id/materi3Fragment"
+        tools:layout="@layout/fragment_materi3"
+        android:name="com.eva.dikejar.ui.materi.Materi3Fragment"
+        android:label="Materi3Fragment" >
+        <action
+            android:id="@+id/action_materi3Fragment_to_pendahuluan3Fragment"
+            app:destination="@id/pendahuluan3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pendahuluan3Fragment"
+        tools:layout="@layout/fragment_pendahuluan1"
+        android:name="com.eva.dikejar.ui.pendahuluan.Pendahuluan3Fragment"
+        android:label="Pendahuluan3Fragment" />
+    <fragment
+        android:id="@+id/pratinjauFragment"
+        android:name="com.eva.dikejar.ui.pratinjau.PratinjauFragment"
+        android:label="fragment_pratinjau"
+        tools:layout="@layout/fragment_pratinjau" >
+        <action
+            android:id="@+id/action_pratinjauFragment_to_konsep1Fragment"
+            app:destination="@id/konsep1Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/konsep1Fragment"
+        android:name="com.eva.dikejar.ui.peta_konsep.Konsep1Fragment"
+        android:label="fragment_konsep1"
+        tools:layout="@layout/fragment_konsep1"
+        />
+    <fragment
+        android:id="@+id/konsep2Fragment"
+        tools:layout="@layout/fragment_konsep2"
+        android:name="com.eva.dikejar.ui.peta_konsep.Konsep2Fragment"
+        android:label="Konsep2Fragment" >
+        <action
+            android:id="@+id/action_konsep2Fragment_to_konsep3Fragment"
+            app:destination="@id/konsep3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/konsep3Fragment"
+        tools:layout="@layout/fragment_konsep3"
+        android:name="com.eva.dikejar.ui.peta_konsep.Konsep3Fragment"
+        android:label="Konsep3Fragment" />
 
 </navigation>

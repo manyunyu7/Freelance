@@ -124,4 +124,25 @@
     <string name="answers_3_4">e.\tSemua benar</string>
     <string name="answers_3_3">c.\tSetting screensaver</string>
     <string name="answers_3_2">b.\tBasic input output system</string>
+    <string name="pratinjau_1">Peralatan / komponen pada PC meliputi unit input, unit proses, dan unit output. Merakit komputer memiliki prosedur antara komponen satu dengan lainnya.</string>
+    <string name="pratinjau2">Dalam menguji hasil perakitan komputer akan dipelajari beep dan kegunaannya. Selain itu akan diidentifikasi dan diuji hardware pada komputer.</string>
+    <string name="pratinjau3">Dalam sebuah BIOS terdapat sebuah chip memory (ROM/flash memory) dari bahan CMOS yang terdapat pada sebuah motherboard dengan ditambah baterai CMOS.</string>
+    <string name="kp322">3.2.2 Menentukan spesifikasi komputer sesuai dengan kebutuhan pekerjaan</string>
+    <string name="kp323">3.2.3 Menentukan langkah-langkah perakitan komputer sesuai standar industri</string>
+    <string name="kp421">4.2.1 Menerapkan prosedur K3 perakitan komputer</string>
+    <string name="kp422">4.2.2 Melakukan perakitan komputer sesuai standar industri</string>
+    <string name="kp423">4.2.3 Membuat laporan perakitan komputer</string>
+    <string name="kp33">3.3 Menerapkan pengujian perakitan komputer</string>
+    <string name="kp242">4.2 Menguji kinerja komputer</string>
+    <string name="kp331">3.3.1 Menentukan cara pengujian hasil perakitan komputer</string>
+    <string name="kp332">3.3.2 Mengurutkan langkah-langkah pengujian hasil perakitan komputer</string>
+    <string name="kp431">4.3.1 melakukan pengujian hasil perakitan komputer</string>
+    <string name="kp432">4.3.2 Membuat laporan pengujian kinerja komputer</string>
+    <string name="kp3_34">3.4 Menerapkan konfigurasi BIOS pada komputer</string>
+    <string name="kp3_42">4.2 Merakit komputer</string>
+    <string name="kp341">3.4.1 Menjelaskan komponen BIOS</string>
+    <string name="kp342">3.4.2 Menentukan konfigurasi BIOS sesuai dengan kebutuhan</string>
+    <string name="kp441">4.4.1 Melakukan konfigurasi BIOS sebagai prasyarat penginstalasian sistem operasi</string>
+    <string name="kp442">4.4.2 Melakukan pengujian hasil konfigurasi BIOS</string>
+    <string name="kp443">4.4.3 Membuat laporan hasil konfigurasi BIOS</string>
 </resources>

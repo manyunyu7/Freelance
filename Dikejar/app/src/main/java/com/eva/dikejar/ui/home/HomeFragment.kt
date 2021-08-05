@@ -35,6 +35,13 @@ class HomeFragment : Fragment() {
             findNavController().navigate(R.id.fragmentVideo1)
         }
 
+        binding.cardLetsBelajar.setOnClickListener {
+            findNavController().navigate(R.id.pratinjauFragment)
+        }
+        binding.tvLearnMore.setOnClickListener {
+            findNavController().navigate(R.id.pratinjauFragment)
+        }
+
         binding.includedEval.apply {
             btnTestRakit.setOnClickListener {
                 findNavController().navigate(R.id.evaluasiFragment1, bundleOf("type" to "eval1"))
@@ -49,11 +56,23 @@ class HomeFragment : Fragment() {
 
         binding.includeMateri.apply {
             startMateri1.setOnClickListener {
-                findNavController().navigate(R.id.action_homeFragment_to_materi1Fragment, bundleOf("type" to "eval1"))
+                findNavController().navigate(
+                    R.id.action_homeFragment_to_materi1Fragment,
+                    bundleOf("type" to "eval1")
+                )
             }
 
             startMateri2.setOnClickListener {
-                findNavController().navigate(R.id.action_homeFragment_to_materi2Fragment, bundleOf("type" to "eval1"))
+                findNavController().navigate(
+                    R.id.action_homeFragment_to_materi2Fragment,
+                    bundleOf("type" to "eval1")
+                )
+            }
+            startMateri3.setOnClickListener {
+                findNavController().navigate(
+                    R.id.action_homeFragment_to_materi3Fragment,
+                    bundleOf("type" to "eval1")
+                )
             }
         }
 

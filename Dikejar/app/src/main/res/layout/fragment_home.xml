@@ -90,6 +90,7 @@
                                 android:text="@string/gali_idemu_raih_targetmu_belajar_bersamaku" />
 
                             <TextView
+                                android:id="@+id/tv_learn_more"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="20dp"
@@ -107,6 +108,7 @@
             </RelativeLayout>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/card_lets_belajar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="22dp"
