@@ -20,7 +20,11 @@ class NavigationControllerActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController)
 
         supportActionBar?.hide()
-        actionBar?.hide();
+        actionBar?.hide()
+
+        binding.btnGoHome.setOnClickListener {
+            findNavController(R.id.nav_main_controller).popBackStack(R.id.homeFragment,false)
+        }
 
 
         binding.btnInformation.setOnClickListener {

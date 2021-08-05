@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.core.os.bundleOf
 import androidx.navigation.fragment.findNavController
 import com.eva.dikejar.R
 import com.eva.dikejar.databinding.FragmentMateri1Binding
@@ -21,7 +22,6 @@ class Materi1Fragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
     }
 
     override fun onCreateView(
@@ -90,6 +90,10 @@ class Materi1Fragment : Fragment() {
             binding.cardMateri6.setOnClickListener {
                 showToast("Selesaikan Pendahuluan Terlebih Dahulu")
             }
+        }
+
+        binding.finalExam.setOnClickListener {
+            findNavController().navigate(R.id.penutupan1Fragment, bundleOf("type" to "1",))
         }
 
 

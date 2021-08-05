@@ -42,6 +42,21 @@ class HomeFragment : Fragment() {
             findNavController().navigate(R.id.pratinjauFragment)
         }
 
+        val baseURL = "https://kelurahan-bojongsari.net/ryy/"
+        binding.includedVideo.vid1.setOnClickListener {
+            findNavController().navigate(
+                R.id.action_homeFragment_to_playVideoFragment,
+                bundleOf("url" to "$baseURL/vid1.mp4")
+            )
+        }
+
+        binding.includedVideo.vid2.setOnClickListener {
+            findNavController().navigate(
+                R.id.action_homeFragment_to_playVideoFragment,
+                bundleOf("url" to "$baseURL/vid2.mp4")
+            )
+        }
+
         binding.includedEval.apply {
             btnTestRakit.setOnClickListener {
                 findNavController().navigate(R.id.evaluasiFragment1, bundleOf("type" to "eval1"))

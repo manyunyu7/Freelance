@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.os.bundleOf
 import androidx.navigation.fragment.findNavController
 import com.eva.dikejar.R
 import com.eva.dikejar.databinding.FragmentMenuVideo2Binding
@@ -40,6 +41,15 @@ class FragmentVideo2 : Fragment() {
         binding.chip3.setOnClickListener{
             findNavController().navigate(R.id.fragmentVideo3)
         }
+
+        val baseURL = "https://kelurahan-bojongsari.net/ryy/"  //jangan dihapus untuk video
+        binding.vid7.setOnClickListener {
+            findNavController().navigate(
+                R.id.videoPlayerFragment,
+                bundleOf("url" to "$baseURL/vid7.mp4")
+            )
+        }
+
 
     }
 

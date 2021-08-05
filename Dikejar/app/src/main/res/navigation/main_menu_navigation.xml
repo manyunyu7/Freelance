@@ -38,6 +38,9 @@
         <action
             android:id="@+id/action_homeFragment_to_pratinjauFragment"
             app:destination="@id/pratinjauFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_playVideoFragment"
+            app:destination="@id/videoPlayerFragment" />
     </fragment>
 
     <fragment
@@ -174,5 +177,19 @@
         tools:layout="@layout/fragment_konsep3"
         android:name="com.eva.dikejar.ui.peta_konsep.Konsep3Fragment"
         android:label="Konsep3Fragment" />
+    <fragment
+        android:id="@+id/penutupan1Fragment"
+        android:name="com.eva.dikejar.ui.penutup.Penutupan1Fragment"
+        android:label="Penutupan1Fragment" />
+    <fragment
+        android:id="@+id/penutup1Answers"
+        android:name="com.eva.dikejar.ui.penutup.Penutup1Answers"
+        android:label="Penutup1Answers" />
+    <fragment
+        android:id="@+id/videoPlayerFragment"
+        android:name="com.eva.dikejar.ui.VideoPlayerFragment"
+        android:label="fragment_video_player"
+        tools:layout="@layout/fragment_video_player" />
+
 
 </navigation>

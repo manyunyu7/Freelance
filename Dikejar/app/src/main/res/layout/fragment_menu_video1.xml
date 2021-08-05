@@ -66,6 +66,7 @@
                 android:layout_height="wrap_content">
 
                 <RelativeLayout
+                    android:id="@+id/vid1"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -97,6 +98,7 @@
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:id="@+id/vid2"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -134,6 +136,7 @@
                 android:layout_height="wrap_content">
 
                 <RelativeLayout
+                    android:id="@+id/vid3"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -164,6 +167,7 @@
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:id="@+id/vid4"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -178,7 +182,6 @@
                         android:layout_alignParentTop="true"
                         android:layout_centerInParent="true"
                         android:scaleType="fitXY"
-
                         android:src="@drawable/xd_thumbnail" />
 
                     <TextView
@@ -201,6 +204,7 @@
                 android:layout_height="wrap_content">
 
                 <RelativeLayout
+                    android:id="@+id/vid5"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -232,6 +236,7 @@
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:id="@+id/vid6"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"

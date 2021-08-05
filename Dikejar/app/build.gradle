@@ -56,5 +56,5 @@ dependencies {
 
 
     implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
-
+    implementation 'com.github.HamidrezaAmz:MagicalExoPlayer:2.0.7'
 }
