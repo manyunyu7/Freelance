@@ -10,18 +10,18 @@ import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.eva.dikejar.R
 import com.eva.dikejar.databinding.FragmentMateri1Binding
+import com.eva.dikejar.databinding.FragmentMateri2Binding
 import com.eva.dikejar.pdf.ViewPDFActivity
 import com.feylabs.lasagna.util.SharedPreference.Preferences
 
 
-class Materi1Fragment : Fragment() {
+class Materi2Fragment : Fragment() {
 
-    var _binding: FragmentMateri1Binding? = null
+    var _binding: FragmentMateri2Binding? = null
     val binding get() = _binding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
     }
 
     override fun onCreateView(
@@ -29,7 +29,7 @@ class Materi1Fragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        _binding = FragmentMateri1Binding.inflate(inflater, container, false)
+        _binding = FragmentMateri2Binding.inflate(inflater, container, false)
         return binding.root
         // Inflate the layout for this fragment
     }
@@ -39,37 +39,26 @@ class Materi1Fragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.cardPendahuluan.setOnClickListener {
-            findNavController().navigate(R.id.action_materi1Fragment_to_pendahuluan1Fragment)
+            findNavController().navigate(R.id.action_materi2Fragment_to_pendahuluan2Fragment)
         }
 
-        val pref = Preferences(requireContext()).getPrefString(Preferences.PENDAHULUAN1)
+        val pref = Preferences(requireContext()).getPrefString(Preferences.PENDAHULUAN2)
         if (pref == "ok") {
             binding.apply {
                 gembok1.visibility = View.INVISIBLE
                 gembok2.visibility = View.INVISIBLE
                 gembok3.visibility = View.INVISIBLE
-                gembok4.visibility = View.INVISIBLE
-                gembok5.visibility = View.INVISIBLE
-                gembok6.visibility = View.INVISIBLE
 
                 binding.cardMateri1.setOnClickListener {
-                    openPDF("1_1.pdf")
+                    openPDF("2_1.pdf")
                 }
                 binding.cardMateri2.setOnClickListener {
-                    openPDF("1_2.pdf")
+                    openPDF("2_2.pdf")
                 }
                 binding.cardMateri3.setOnClickListener {
-                    openPDF("1_3.pdf")
+                    openPDF("2_3.pdf")
                 }
-                binding.cardMateri4.setOnClickListener {
-                    openPDF("1_4.pdf")
-                }
-                binding.cardMateri5.setOnClickListener {
-                    openPDF("1_5.pdf")
-                }
-                binding.cardMateri6.setOnClickListener {
-                    openPDF("1_6.pdf")
-                }
+
             }
         } else {
             binding.cardMateri1.setOnClickListener {
@@ -81,28 +70,19 @@ class Materi1Fragment : Fragment() {
             binding.cardMateri3.setOnClickListener {
                 showToast("Selesaikan Pendahuluan Terlebih Dahulu")
             }
-            binding.cardMateri4.setOnClickListener {
-                showToast("Selesaikan Pendahuluan Terlebih Dahulu")
-            }
-            binding.cardMateri5.setOnClickListener {
-                showToast("Selesaikan Pendahuluan Terlebih Dahulu")
-            }
-            binding.cardMateri6.setOnClickListener {
-                showToast("Selesaikan Pendahuluan Terlebih Dahulu")
-            }
         }
 
 
     }
 
-    fun openPDF(filename: String) {
+    private fun openPDF(filename: String) {
         startActivity(
             Intent(requireActivity(), ViewPDFActivity::class.java)
                 .putExtra("file", filename)
         )
     }
 
-    fun showToast(string: String) {
+    private fun showToast(string: String) {
         Toast.makeText(requireContext(), string, Toast.LENGTH_SHORT).show()
     }
 

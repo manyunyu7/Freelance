@@ -39,7 +39,7 @@ class Pendahuluan1Fragment : Fragment() {
                 Toast.makeText(requireContext(),"Isi Jawaban Terlebih Dahulu",Toast.LENGTH_LONG).show()
             }else{
                 Preferences(requireContext()).save(Preferences.PENDAHULUAN1,"ok")
-                findNavController().navigate(R.id.materi1)
+                findNavController().navigate(R.id.materi1Fragment)
             }
 
         }

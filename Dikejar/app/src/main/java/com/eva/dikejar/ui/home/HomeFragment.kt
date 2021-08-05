@@ -51,7 +51,12 @@ class HomeFragment : Fragment() {
             startMateri1.setOnClickListener {
                 findNavController().navigate(R.id.action_homeFragment_to_materi1Fragment, bundleOf("type" to "eval1"))
             }
+
+            startMateri2.setOnClickListener {
+                findNavController().navigate(R.id.action_homeFragment_to_materi2Fragment, bundleOf("type" to "eval1"))
+            }
         }
+
 
     }
 }

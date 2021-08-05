@@ -5,8 +5,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.navigation.fragment.findNavController
 import com.eva.dikejar.R
 import com.eva.dikejar.databinding.FragmentPendahuluan1Binding
+import com.feylabs.lasagna.util.SharedPreference.Preferences
 
 
 class Pendahuluan2Fragment : Fragment() {
@@ -25,6 +28,24 @@ class Pendahuluan2Fragment : Fragment() {
         _binding = FragmentPendahuluan1Binding.inflate(inflater,container,false)
         // Inflate the layout for this fragment
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+
+        binding.tvSoal.text="1.\tMenurut pendapat kalian mengapa pengujian kinerja computer harus dilakukan setelah perakitan selesai?"
+        binding.btnSubmit.setOnClickListener {
+            val answers = binding.etAnswers.text.toString()
+            if (answers.isEmpty()){
+                Toast.makeText(requireContext(),"Isi Jawaban Terlebih Dahulu",Toast.LENGTH_LONG).show()
+            }else{
+                Preferences(requireContext()).save(Preferences.PENDAHULUAN2,"ok")
+                findNavController().navigate(R.id.materi2Fragment)
+            }
+
+        }
+
     }
 
 

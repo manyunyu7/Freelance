@@ -26,6 +26,12 @@
         <action
             android:id="@+id/action_homeFragment_to_materi1Fragment"
             app:destination="@id/materi1Fragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_materi2Fragment"
+            app:destination="@id/materi2Fragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
     </fragment>
 
     <fragment
@@ -91,5 +97,21 @@
         android:name="com.eva.dikejar.ui.pendahuluan.Pendahuluan1Fragment"
         android:label="fragment_pendahuluan1"
         tools:layout="@layout/fragment_pendahuluan1" />
+    <fragment
+        android:id="@+id/pendahuluan2Fragment"
+        android:name="com.eva.dikejar.ui.pendahuluan.Pendahuluan2Fragment"
+        android:label="Pendahuluan2Fragment"
+        tools:layout="@layout/fragment_pendahuluan1"
+        />
+    <fragment
+        android:id="@+id/materi2Fragment"
+        android:name="com.eva.dikejar.ui.materi.Materi2Fragment"
+        android:label="Materi2Fragment"
+        tools:layout="@layout/fragment_materi2"
+        >
+        <action
+            android:id="@+id/action_materi2Fragment_to_pendahuluan2Fragment"
+            app:destination="@id/pendahuluan2Fragment" />
+    </fragment>
 
 </navigation>

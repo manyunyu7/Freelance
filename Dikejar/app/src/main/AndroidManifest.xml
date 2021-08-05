@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Dikejar">
+        <activity android:name=".pdf.ViewPDFActivity"></activity>
         <activity android:name=".NavigationControllerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,9 +20,7 @@
         <activity
             android:name=".BottomNavActivity"
             android:label="@string/title_activity_bottom_nav" />
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>
