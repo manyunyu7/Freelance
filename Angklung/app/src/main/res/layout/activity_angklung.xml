@@ -10,198 +10,180 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/background_flip"
         android:scaleType="fitXY"
-        />
+        android:src="@drawable/background_flip" />
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal">
-
+        android:fillViewport="true">
 
         <LinearLayout
-            android:layout_marginStart="10dp"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-
-            <ImageButton
-                android:id="@+id/at_8"
+            <LinearLayout
+                android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
                 android:layout_weight="1"
-                android:longClickable="true"
-                android:layout_marginHorizontal="10dp"
-                android:backgroundTint="@android:color/transparent"
-                android:scaleType="fitXY"
-                android:src="@drawable/ang1" />
+                android:orientation="vertical">
 
-            <ImageButton
-                android:id="@+id/at_9"
+
+                <ImageButton
+                    android:id="@+id/at_8"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:backgroundTint="@android:color/transparent"
+                    android:longClickable="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ang1" />
+
+                <ImageButton
+                    android:id="@+id/at_9"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:backgroundTint="@android:color/transparent"
+                    android:longClickable="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ang2" />
+
+                <ImageButton
+                    android:id="@+id/at_10"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:backgroundTint="@android:color/transparent"
+                    android:longClickable="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ang3" />
+
+                <ImageButton
+                    android:id="@+id/at_11"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:backgroundTint="@android:color/transparent"
+                    android:longClickable="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ang4" />
+
+                <ImageButton
+                    android:id="@+id/at_12"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:backgroundTint="@android:color/transparent"
+                    android:longClickable="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ang5" />
+
+
+                <ImageButton
+                    android:id="@+id/at_13"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:backgroundTint="@android:color/transparent"
+                    android:longClickable="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ang6" />
+
+                <ImageButton
+                    android:id="@+id/at_14"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:backgroundTint="@android:color/transparent"
+                    android:longClickable="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ang7" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
                 android:layout_weight="1"
-                android:longClickable="true"
-                android:layout_marginHorizontal="10dp"
-                android:backgroundTint="@android:color/transparent"
-                android:scaleType="fitXY"
-                android:src="@drawable/ang2" />
-
-            <ImageButton
-                android:id="@+id/at_10"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:longClickable="true"
-                android:layout_marginHorizontal="10dp"
-                android:backgroundTint="@android:color/transparent"
-                android:scaleType="fitXY"
-                android:src="@drawable/ang3" />
-
-            <ImageButton
-                android:id="@+id/at_11"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_marginHorizontal="10dp"
-                android:backgroundTint="@android:color/transparent"
-                android:scaleType="fitXY"
-                android:src="@drawable/ang4" />
+                android:orientation="vertical">
 
 
-            <ImageButton
-                android:id="@+id/at_12"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_marginHorizontal="10dp"
-                android:backgroundTint="@android:color/transparent"
-                android:scaleType="fitXY"
-                android:src="@drawable/ang5" />
+                <ImageButton
+                    android:id="@+id/at_1"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:backgroundTint="@android:color/transparent"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ang1" />
 
+                <ImageButton
+                    android:id="@+id/at_2"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:backgroundTint="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ang2" />
 
-            <ImageButton
-                android:id="@+id/at_13"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_marginHorizontal="10dp"
-                android:backgroundTint="@android:color/transparent"
-                android:scaleType="fitXY"
-                android:src="@drawable/ang6" />
+                <ImageButton
+                    android:id="@+id/at_3"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:backgroundTint="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ang3" />
 
-            <ImageButton
-                android:id="@+id/at_14"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_marginHorizontal="10dp"
-                android:backgroundTint="@android:color/transparent"
-                android:scaleType="fitXY"
-                android:src="@drawable/ang7" />
+                <ImageButton
+                    android:id="@+id/at_4"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:backgroundTint="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ang4" />
+
+                <ImageButton
+                    android:id="@+id/at_5"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:backgroundTint="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ang5" />
+
+                <ImageButton
+                    android:id="@+id/at_6"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:backgroundTint="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ang6" />
+
+                <ImageButton
+                    android:id="@+id/at_7"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:backgroundTint="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ang7" />
+
+            </LinearLayout>
 
 
         </LinearLayout>
-
-        <LinearLayout
-            android:layout_marginEnd="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-
-            <ImageButton
-                android:id="@+id/at_1"
-                android:focusable="true"
-                android:focusableInTouchMode="true"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_marginHorizontal="10dp"
-                android:backgroundTint="@android:color/transparent"
-                android:scaleType="fitXY"
-                android:src="@drawable/ang1" />
-
-            <ImageButton
-                android:id="@+id/at_2"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_marginHorizontal="10dp"
-                android:backgroundTint="@android:color/transparent"
-                android:scaleType="fitXY"
-                android:src="@drawable/ang2" />
-
-            <ImageButton
-                android:id="@+id/at_3"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_marginHorizontal="10dp"
-                android:backgroundTint="@android:color/transparent"
-                android:scaleType="fitXY"
-                android:src="@drawable/ang3" />
-
-            <ImageButton
-                android:id="@+id/at_4"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_marginHorizontal="10dp"
-                android:backgroundTint="@android:color/transparent"
-                android:scaleType="fitXY"
-                android:src="@drawable/ang4" />
-
-            <ImageButton
-                android:id="@+id/at_5"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_marginHorizontal="10dp"
-                android:backgroundTint="@android:color/transparent"
-                android:scaleType="fitXY"
-                android:src="@drawable/ang5" />
-
-            <ImageButton
-                android:id="@+id/at_6"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_marginHorizontal="10dp"
-                android:backgroundTint="@android:color/transparent"
-                android:scaleType="fitXY"
-                android:src="@drawable/ang6" />
-
-            <ImageButton
-                android:id="@+id/at_7"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_marginHorizontal="10dp"
-                android:backgroundTint="@android:color/transparent"
-                android:scaleType="fitXY"
-                android:src="@drawable/ang7" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        </LinearLayout>
-
-
-    </LinearLayout>
+    </ScrollView>
 
 </RelativeLayout>
