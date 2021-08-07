@@ -56,6 +56,9 @@ class Materi3Fragment : Fragment() {
                 binding.cardMateri2.setOnClickListener {
                     openPDF("3_2.pdf")
                 }
+                binding.finalExam.setOnClickListener {
+                    findNavController().navigate(R.id.penutupan1Fragment, bundleOf("type" to "3"))
+                }
 
             }
         } else {
@@ -65,11 +68,12 @@ class Materi3Fragment : Fragment() {
             binding.cardMateri2.setOnClickListener {
                 showToast("Selesaikan Pendahuluan Terlebih Dahulu")
             }
+            binding.finalExam.setOnClickListener {
+                showToast("Selesaikan Pendahuluan Terlebih Dahulu")
+            }
         }
 
-        binding.finalExam.setOnClickListener {
-            findNavController().navigate(R.id.penutupan1Fragment, bundleOf("type" to "3"))
-        }
+
 
 
     }
