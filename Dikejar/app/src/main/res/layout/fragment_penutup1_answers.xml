@@ -117,7 +117,7 @@
                 android:background="@color/color_primary"
                 android:fontFamily="@font/poppins_bold"
                 android:padding="10dp"
-                android:text="JAWABAN BENAR"
+                android:text="KUNCI JAWABAN"
                 android:backgroundTint="#0B8032"
                 android:textAlignment="center"
                 android:textColor="@color/white"
