@@ -41,6 +41,9 @@
         <action
             android:id="@+id/action_homeFragment_to_playVideoFragment"
             app:destination="@id/videoPlayerFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_fragmentVideo2"
+            app:destination="@id/fragmentVideo2" />
     </fragment>
 
     <fragment
@@ -60,6 +63,9 @@
         android:label="fragment_menu_video"
         tools:layout="@layout/fragment_menu_video1" >
 
+        <action
+            android:id="@+id/action_fragmentVideo1_to_evaluasiFragment3"
+            app:destination="@id/evaluasiFragment3" />
     </fragment>
     <fragment
         android:id="@+id/fragmentVideo2"
@@ -95,7 +101,11 @@
         android:name="com.eva.dikejar.ui.evaluasi.EvaluasiFragment_3_Konfigurasi"
         android:label="EvaluasiFragment_3_Konfigurasi"
         tools:layout="@layout/fragment_evaluasi_3"
-        />
+        >
+        <action
+            android:id="@+id/action_evaluasiFragment3_to_listVideoFragment"
+            app:destination="@id/listVideoFragment" />
+    </fragment>
     <fragment
         android:id="@+id/materi1Fragment"
         tools:layout="@layout/fragment_materi1"
@@ -190,6 +200,12 @@
         android:name="com.eva.dikejar.ui.VideoPlayerFragment"
         android:label="fragment_video_player"
         tools:layout="@layout/fragment_video_player" />
+    <fragment
+        android:id="@+id/listVideoFragment"
+        android:name="com.eva.dikejar.ui.video.ListVideoFragment"
+        android:label="ListVideoFragment"
+        tools:layout="@layout/fragment_list_video"
+        />
 
 
 </navigation>

@@ -36,7 +36,7 @@ class HomeFragment : Fragment() {
         }
 
         binding.cardLetsBelajar.setOnClickListener {
-            findNavController().navigate(R.id.pratinjauFragment)
+            findNavController().navigate(R.id.listVideoFragment)
         }
         binding.tvLearnMore.setOnClickListener {
             findNavController().navigate(R.id.pratinjauFragment)
